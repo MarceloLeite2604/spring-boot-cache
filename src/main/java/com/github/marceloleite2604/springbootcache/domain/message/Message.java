@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.*;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -12,7 +13,7 @@ import java.util.UUID;
 @Getter
 @Entity
 @NoArgsConstructor
-public class Message {
+public class Message implements Serializable {
 
     @Id
     private UUID id;
